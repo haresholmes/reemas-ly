@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="g24A" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="100%" stop-color="#C59B27"/>
+    </linearGradient>
+    <linearGradient id="g24B" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECCF78"/>
+      <stop offset="100%" stop-color="#8F6510"/>
+    </linearGradient>
+    <linearGradient id="g24C" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE08A"/>
+      <stop offset="100%" stop-color="#A67B18"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: Impossible Trilliant Gold Ingot Loop -->
+  <g transform="translate(200, 140)">
+    <!-- Bar 1 (Top/Right) -->
+    <polygon points="0,-68 62,38 46,38 -6,-52 -18,-52 0,-68" fill="url(#g24A)"/>
+    <!-- Bar 2 (Bottom) -->
+    <polygon points="62,38 -62,38 -50,22 46,22 46,38" fill="url(#g24B)"/>
+    <!-- Bar 3 (Left/Top) -->
+    <polygon points="-62,38 0,-68 0,-50 -48,32 -62,38" fill="url(#g24C)"/>
+    <!-- Inner Trilliant Spark Gem -->
+    <polygon points="0,-18 16,10 -16,10" fill="#FFFDF0"/>
+    <polygon points="0,-18 0,10 -16,10" fill="#E5C058" opacity="0.6"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#g24A)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#g24A)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold29" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="35%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: The Celestial Gold Orbit & Princess Solitaire -->
+  <g transform="translate(200, 145)">
+    <!-- Vertical Subtle Meridian Axis -->
+    <line x1="0" y1="-75" x2="0" y2="75" stroke="url(#gold29)" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+    <!-- Outer Tilted Elliptical Orbit (Thick & Thin Modulation) -->
+    <ellipse cx="0" cy="0" rx="68" ry="32" transform="rotate(-25)" fill="none" stroke="url(#gold29)" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="60" ry="26" transform="rotate(-25)" fill="none" stroke="url(#gold29)" stroke-width="1.2" opacity="0.5"/>
+    <!-- Off-Center Princess Cut Solitaire Diamond Floating on Orbit -->
+    <g transform="translate(36, -22) rotate(20)">
+      <rect x="-12" y="-12" width="24" height="24" fill="#FFFDF0" rx="1"/>
+      <polygon points="-12,-12 0,0 -12,12" fill="#E5C058" opacity="0.4"/>
+      <polygon points="12,-12 0,0 12,12" fill="#A67B18" opacity="0.5"/>
+      <!-- Sparkle Dot -->
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+    </g>
+    <!-- Counterweight Golden Orb at Opposite Node -->
+    <circle cx="-38" cy="22" r="4.5" fill="url(#gold29)"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold29)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold29)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

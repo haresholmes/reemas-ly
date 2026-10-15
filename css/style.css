@@ -1,0 +1,1265 @@
+/* ==========================================================================
+   AL REEMAS CENTER — Imperial Luxury & Minimalist Visual Identity
+   Palette: Midnight Obsidian Navy (#040913), Royal Gold (#D4AF37, #E6C15B)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700&display=swap');
+
+:root {
+  /* Dark Luxury Imperial Theme (Default) */
+  --theme: dark;
+  --bg: #040913;
+  --bg-gradient: radial-gradient(circle at 50% -20%, #112544 0%, #060D1A 45%, #03060C 100%);
+  --bg-alt: #081222;
+  --bg-card: rgba(12, 24, 44, 0.65);
+  --bg-card-hover: rgba(18, 36, 66, 0.85);
+  --bg-glass: rgba(8, 18, 34, 0.82);
+
+  /* Gold Metallics */
+  --gold: #D4AF37;
+  --gold-light: #FFF1BF;
+  --gold-rich: #E6C15B;
+  --gold-dark: #A37A20;
+  --gold-gradient: linear-gradient(135deg, #FFF2C2 0%, #E6C15B 30%, #B58525 70%, #ECCF78 100%);
+  --gold-subtle: rgba(212, 175, 55, 0.12);
+  --line-gold: rgba(212, 175, 55, 0.3);
+  --line-gold-strong: rgba(212, 175, 55, 0.65);
+
+  /* Inks & Text */
+  --ink: #FFFFFF;
+  --ink-soft: #CBD5E1;
+  --ink-muted: #94A3B8;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-subtle: rgba(255, 255, 255, 0.04);
+
+  /* Typography */
+  --font-ar: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Tahoma, sans-serif;
+  --font-en: 'Jost', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-serif: 'Cinzel', serif;
+
+  /* Layout */
+  --container-max: 1180px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-gold: 0 12px 40px rgba(212, 175, 55, 0.12);
+  --shadow-dark: 0 20px 50px rgba(0, 0, 0, 0.4);
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Ivory / Clean Light Theme (Optional Toggle) */
+html[data-theme="light"] {
+  --theme: light;
+  --bg: #FAFAF7;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #F5F1E6 0%, #FAF8F2 50%, #FFFFFF 100%);
+  --bg-alt: #F3EFE6;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.92);
+
+  --ink: #081426;
+  --ink-soft: #334155;
+  --ink-muted: #64748B;
+  --line: rgba(8, 20, 38, 0.1);
+  --line-subtle: rgba(8, 20, 38, 0.05);
+}
+
+/* ==========================================================================
+   Base Styles & Reset
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg);
+}
+
+body {
+  font-family: var(--font-ar);
+  color: var(--ink);
+  background: var(--bg-gradient);
+  background-color: var(--bg);
+  background-attachment: fixed;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html[lang="en"] body {
+  font-family: var(--font-en), var(--font-ar);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* ==========================================================================
+   Luxury Accents & Typography
+   ========================================================================== */
+.text-gold-gradient {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.badge-luxury {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 18px;
+  background: var(--gold-subtle);
+  border: 1px solid var(--line-gold);
+  border-radius: 50px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--gold-rich);
+  backdrop-filter: blur(8px);
+}
+
+.badge-pulse {
+  width: 8px;
+  height: 8px;
+  background-color: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--gold);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 14px var(--gold); }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.section-label {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-label::before {
+  content: '◆';
+  font-size: 0.65rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.8vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.section-subtitle {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 680px;
+  line-height: 1.85;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 30px;
+  font-size: 0.96rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  line-height: 1.2;
+}
+
+.btn-gold {
+  background: var(--gold-gradient);
+  color: #040913;
+  border-color: #E6C15B;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(212, 175, 55, 0.4);
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.05);
+  color: #FFFFFF;
+  border-color: var(--line-gold);
+  backdrop-filter: blur(10px);
+}
+
+html[data-theme="light"] .btn-glass {
+  background: rgba(8, 20, 38, 0.05);
+  color: #081426;
+}
+
+.btn-glass:hover {
+  background: var(--gold-subtle);
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Site Header
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+  transition: var(--transition);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+}
+
+.header-brand-logo {
+  height: 52px;
+  width: auto;
+  transition: var(--transition);
+}
+
+html[data-theme="dark"] .header-brand-logo {
+  filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.15));
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.main-nav a {
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  position: relative;
+  padding-block: 6px;
+}
+
+.main-nav a:hover {
+  color: var(--gold);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-control-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.header-control-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--gold);
+  margin-block: 5px;
+  transition: var(--transition);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  padding-block: 90px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-glow-orb {
+  position: absolute;
+  top: -150px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.14) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.hero-lead {
+  font-size: 1.22rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  max-width: 620px;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.hero-media-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-seal-interactive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(212, 175, 55, 0.25);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.hero-seal-interactive:hover {
+  transform: scale(1.03) rotate(3deg);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.7), 0 0 70px rgba(212, 175, 55, 0.4);
+}
+
+/* ==========================================================================
+   Live Bullion Spot Price Ticker Bar (شريط أسعار الذهب الفورية)
+   ========================================================================== */
+.gold-ticker-section {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--line-gold);
+  border-bottom: 1px solid var(--line-gold);
+  padding-block: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.ticker-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.ticker-live-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.ticker-refresh-btn {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink-muted);
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.ticker-refresh-btn:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.gold-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.gold-price-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: var(--transition);
+  backdrop-filter: blur(8px);
+}
+
+.gold-price-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  background: var(--bg-card-hover);
+}
+
+.gold-karat-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--gold-rich);
+}
+
+.gold-change-badge {
+  font-size: 0.75rem;
+  color: #10B981;
+  font-family: var(--font-en);
+  font-weight: 600;
+}
+
+.gold-price-values {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.gold-price-lyd {
+  font-family: var(--font-en);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.gold-price-usd {
+  font-family: var(--font-en);
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+/* ==========================================================================
+   Credentials Strip (السجل والتراخيص الرسمية)
+   ========================================================================== */
+.credentials-bar {
+  padding-block: 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.credential-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  position: relative;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.credential-item:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.credential-label {
+  font-size: 0.82rem;
+  color: var(--gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.credential-value {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--ink);
+  font-family: var(--font-en);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copied-toast {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--gold);
+  color: #040913;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.copied-toast.show {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Section Layouts
+   ========================================================================== */
+.section {
+  padding-block: 100px;
+  position: relative;
+}
+
+.section-alt {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+/* ==========================================================================
+   Interactive 3D Bullion Bar & Karats Showcase
+   ========================================================================== */
+.bullion-showcase-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.bullion-3d-stage {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.bullion-bar-card {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1.6 / 2.6;
+  background: linear-gradient(135deg, #FFF6D1 0%, #F5CE68 20%, #C49124 50%, #E8C86E 75%, #8A5D0E 100%);
+  border-radius: 14px;
+  padding: 32px 28px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7), 0 0 60px rgba(212, 175, 55, 0.35), inset 0 2px 6px rgba(255, 255, 255, 0.8), inset 0 -4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #4D3305;
+  position: relative;
+  transform: rotateY(-8deg) rotateX(6deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid #FFEAA5;
+  cursor: pointer;
+}
+
+.bullion-bar-card:hover {
+  transform: rotateY(0deg) rotateX(0deg) scale(1.03);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.8), 0 0 80px rgba(212, 175, 55, 0.5);
+}
+
+.bullion-bar-stamp {
+  font-family: var(--font-en);
+  font-weight: 800;
+  letter-spacing: 5px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid rgba(77, 51, 5, 0.4);
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.bullion-purity-large {
+  font-family: var(--font-en);
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bullion-purity-label {
+  font-family: var(--font-en);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.bullion-hallmark-seal {
+  width: 74px;
+  height: 74px;
+  border: 2px dashed rgba(77, 51, 5, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.bullion-hallmark-seal img {
+  width: 100%;
+  height: auto;
+  filter: sepia(1) hue-rotate(340deg) saturate(3);
+}
+
+.bullion-serial-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-en);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-top: 1px solid rgba(77, 51, 5, 0.3);
+  padding-top: 10px;
+}
+
+/* Products Karats Grid */
+.karats-interactive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.karat-detail-box {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+}
+
+.karat-detail-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 4px;
+  background: var(--gold-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+html[dir="ltr"] .karat-detail-box::before {
+  right: auto;
+  left: 0;
+}
+
+.karat-detail-box:hover {
+  border-color: var(--gold);
+  background: var(--bg-card-hover);
+  transform: translateX(-4px);
+}
+
+html[dir="ltr"] .karat-detail-box:hover {
+  transform: translateX(4px);
+}
+
+.karat-detail-box:hover::before {
+  opacity: 1;
+}
+
+.karat-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.karat-box-tag {
+  font-family: var(--font-en);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.karat-fineness-pill {
+  font-family: var(--font-en);
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: var(--gold-subtle);
+  border: 1px solid var(--line-gold);
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: var(--gold-light);
+}
+
+/* ==========================================================================
+   Wholesale Order Calculator (حاسبة طلبيات الجملة للتجار)
+   ========================================================================== */
+.calc-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--line-gold);
+  border-radius: var(--radius-lg);
+  padding: 44px;
+  box-shadow: var(--shadow-dark), var(--shadow-gold);
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.calc-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.calc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calc-field label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.calc-radio-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.calc-radio-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.calc-radio-btn.active, .calc-radio-btn:hover {
+  border-color: var(--gold);
+  background: var(--gold-subtle);
+  color: var(--gold);
+}
+
+.calc-radio-btn strong {
+  font-size: 1.2rem;
+  font-family: var(--font-en);
+}
+
+.calc-radio-btn small {
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+.calc-slider-input {
+  width: 100%;
+  accent-color: var(--gold);
+  margin-top: 8px;
+}
+
+.calc-results-card {
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px solid var(--line-gold);
+  border-radius: var(--radius-md);
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.calc-result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+
+.calc-result-row:last-of-type {
+  border-bottom: none;
+}
+
+.calc-result-label {
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+}
+
+.calc-result-val {
+  font-family: var(--font-en);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+/* ==========================================================================
+   Supply Chain Pipeline (مسار الاستيراد المعتمد)
+   ========================================================================== */
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.pipeline-step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  padding: 32px 24px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: var(--transition);
+  position: relative;
+  backdrop-filter: blur(8px);
+}
+
+.pipeline-step-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+.pipeline-step-number {
+  font-family: var(--font-en);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line-gold);
+  border-radius: 50%;
+  background: var(--gold-subtle);
+}
+
+.pipeline-step-card h3 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.pipeline-step-card p {
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+
+/* ==========================================================================
+   Contact & Quote Form
+   ========================================================================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: flex-start;
+  margin-top: 48px;
+}
+
+.contact-info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line-gold);
+  padding: 44px 38px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  box-shadow: var(--shadow-dark);
+}
+
+.contact-detail-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+}
+
+.contact-detail-label {
+  font-size: 0.8rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.contact-detail-val {
+  font-size: 1.1rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.contact-form {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  padding: 44px 38px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 13px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--ink);
+  transition: var(--transition);
+}
+
+html[data-theme="light"] .form-field input,
+html[data-theme="light"] .form-field select,
+html[data-theme="light"] .form-field textarea {
+  background: #FFFFFF;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px var(--gold-subtle);
+}
+
+.form-feedback {
+  padding: 16px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: none;
+}
+
+.form-feedback.success {
+  display: block;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34D399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+/* ==========================================================================
+   Brand Assets Download Center
+   ========================================================================== */
+.assets-download-bar {
+  padding-block: 70px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.assets-download-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.asset-download-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.asset-download-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+.asset-download-preview {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.asset-download-preview img {
+  max-height: 100px;
+  max-width: 100%;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+.asset-download-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.asset-download-meta {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+.asset-download-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.asset-btn-pill {
+  font-size: 0.78rem;
+  padding: 5px 12px;
+  border-radius: 4px;
+  background: var(--gold-subtle);
+  color: var(--gold-rich);
+  border: 1px solid var(--line-gold);
+  font-weight: 600;
+}
+
+.asset-btn-pill:hover {
+  background: var(--gold);
+  color: #040913;
+}
+
+/* ==========================================================================
+   Site Footer
+   ========================================================================== */
+.site-footer {
+  background: #02050A;
+  color: var(--ink-muted);
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size: 0.94rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-col h4 {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 34px;
+  font-size: 0.88rem;
+}
+
+.footer-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: var(--ink-soft);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 992px) {
+  .hero-grid,
+  .bullion-showcase-grid,
+  .calc-wrapper,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .gold-cards-grid,
+  .pipeline-grid,
+  .assets-download-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-alt);
+    flex-direction: column;
+    padding: 24px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-dark);
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .form-group-row,
+  .gold-cards-grid,
+  .credentials-grid,
+  .pipeline-grid,
+  .assets-download-grid,
+  .calc-radio-group {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header .container {
+    height: 72px;
+  }
+}

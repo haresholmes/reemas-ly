@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold33" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="35%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: Seamless Arabic 'ر' & Latin 'R' Haute Monogram -->
+  <g transform="translate(200, 145)">
+    <!-- Latin 'R' Spine / Pillar -->
+    <path d="M-36,-65 L-36,55" stroke="url(#gold33)" stroke-width="6" stroke-linecap="round"/>
+    <!-- Upper Bowl connecting to Arabic 'ر' flourish -->
+    <path d="M-36,-65 L5,-65 C28,-65 38,-45 38,-24 C38,-5 22,5 -10,5 L-36,5" fill="none" stroke="url(#gold33)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Sweeping Lower Leg forming the Arabic 'ر' (Ra'a) Crescent -->
+    <path d="M-8,5 C10,5 25,25 40,55 C48,70 52,72 58,72" fill="none" stroke="url(#gold33)" stroke-width="6" stroke-linecap="round"/>
+    <!-- Inner Radiant Diamond Solitaire -->
+    <polygon points="0,-32 10,-22 0,-12 -10,-22" fill="#FFFDF0"/>
+    <circle cx="0" cy="-22" r="2" fill="#FFFFFF"/>
+    <!-- Top Apex Jewel Dot -->
+    <circle cx="-36" cy="-72" r="3.5" fill="url(#gold33)"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold33)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold33)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

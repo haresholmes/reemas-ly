@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" width="420" height="80">
+  <defs>
+    <linearGradient id="hGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1BF"/>
+      <stop offset="30%" stop-color="#E6C15B"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&amp;family=Jost:wght@600;700&amp;display=swap');
+      .latin { font-family: 'Jost', 'Cinzel', sans-serif; }
+      .arabic { font-family: 'IBM Plex Sans Arabic', serif; }
+    </style>
+  </defs>
+
+  <!-- Left Mark: Shield Crest in Concentric Rings -->
+  <g transform="translate(40, 40)">
+    <circle cx="0" cy="0" r="36" fill="none" stroke="url(#hGold)" stroke-width="1" opacity="0.5"/>
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#081426" stroke-width="2.4"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="url(#hGold)" stroke-width="1.2" stroke-dasharray="2 3"/>
+    <g fill="none" stroke="url(#hGold)" stroke-width="1.8" stroke-linejoin="round" transform="scale(0.48)">
+      <polygon points="0,-50 30,-32 36,0 22,28 0,40 -22,28 -36,0 -30,-32"/>
+      <polygon points="0,-32 18,-20 0,-5 -18,-20" fill="url(#hGold)" fill-opacity="0.2"/>
+      <line x1="0" y1="-50" x2="0" y2="-32"/>
+      <line x1="30" y1="-32" x2="18" y2="-20"/>
+      <line x1="-30" y1="-32" x2="-18" y2="-20"/>
+      <line x1="36" y1="0" x2="18" y2="-20"/>
+      <line x1="-36" y1="0" x2="-18" y2="-20"/>
+      <line x1="0" y1="-5" x2="0" y2="40"/>
+      <line x1="18" y1="-20" x2="0" y2="40"/>
+      <line x1="-18" y1="-20" x2="0" y2="40"/>
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(92, 0)">
+    <text x="0" y="35" class="arabic" fill="#081426" font-size="24" font-weight="700">مركز الريماس</text>
+    <text x="0" y="54" class="latin" fill="#081426" font-size="11" font-weight="700" letter-spacing="4">AL REEMAS CENTER</text>
+    <text x="0" y="69" class="arabic" fill="url(#hGold)" font-size="10.5" font-weight="600">استيراد الذهب والمجوهرات · طرابلس</text>
+  </g>
+</svg>

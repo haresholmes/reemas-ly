@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold31" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="35%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: The Knot of Hercules (Ancient Mediterranean Goldsmith Knot) -->
+  <g transform="translate(200, 145)">
+    <!-- Loop 1: Left Golden Ribbon -->
+    <path d="M-60,-28 C-35,-55 -8,-5 18,-20 C36,-32 50,-10 32,15 C14,40 -20,10 -40,30 C-55,45 -70,25 -52,0 Z" fill="none" stroke="url(#gold31)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Loop 2: Interlocking Right Symmetrical Ribbon -->
+    <path d="M60,28 C35,55 8,5 -18,20 C-36,32 -50,10 -32,-15 C-14,-40 20,-10 40,-30 C55,-45 70,-25 52,0 Z" fill="none" stroke="url(#gold31)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Central Intersecting Solitaire Diamond Point -->
+    <polygon points="0,-12 9,0 0,12 -9,0" fill="#FFFDF0"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold31)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold31)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

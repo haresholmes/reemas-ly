@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold30" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="35%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: The Libyan Golden Palm & Gem Facets -->
+  <g transform="translate(200, 150)">
+    <!-- Central Vertical Frond Spear -->
+    <path d="M0,-75 L6,-20 L0,30 L-6,-20 Z" fill="url(#gold30)"/>
+    <!-- Left Inner Frond Spear -->
+    <path d="M-42,-50 L-10,-10 L-2,30 L-20,-10 Z" fill="url(#gold30)"/>
+    <!-- Right Inner Frond Spear -->
+    <path d="M42,-50 L20,-10 L2,30 L10,-10 Z" fill="url(#gold30)"/>
+    <!-- Left Outer Frond Spear -->
+    <path d="M-68,-15 L-25,12 L-4,35 L-30,5 Z" fill="url(#gold30)"/>
+    <!-- Right Outer Frond Spear -->
+    <path d="M68,-15 L30,5 L4,35 L25,12 Z" fill="url(#gold30)"/>
+    <!-- Diamond Base Root Facet -->
+    <polygon points="0,35 14,50 0,65 -14,50" fill="#FFFDF0"/>
+    <polygon points="0,35 0,65 -14,50" fill="#E5C058" opacity="0.6"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold30)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold30)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

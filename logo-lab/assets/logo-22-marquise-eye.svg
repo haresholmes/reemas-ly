@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold22" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="35%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: The Royal Marquise Cut Eye + Suspended Diamond -->
+  <g transform="translate(200, 145)">
+    <!-- Outer Marquise Arcs (Golden Cut) -->
+    <path d="M0,-75 C45,-40 68,-10 68,0 C68,10 45,40 0,75 C-45,40 -68,10 -68,0 C-68,-10 -45,-40 0,-75 Z" fill="none" stroke="url(#gold22)" stroke-width="4.5" stroke-linejoin="round"/>
+    <!-- Inner Fine Marquise Accent -->
+    <path d="M0,-58 C32,-30 48,-5 48,0 C48,5 32,30 0,58 C-32,30 -48,5 -48,0 C-48,-5 -32,-30 0,-58 Z" fill="none" stroke="url(#gold22)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Central Solitaire Floating Diamond -->
+    <polygon points="0,-18 14,0 0,18 -14,0" fill="#FFFDF0"/>
+    <polygon points="0,-18 0,18 -14,0" fill="#E5C058" opacity="0.7"/>
+    <!-- North & South Precision Pointers -->
+    <circle cx="0" cy="-75" r="3" fill="url(#gold22)"/>
+    <circle cx="0" cy="75" r="3" fill="url(#gold22)"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold22)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold22)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

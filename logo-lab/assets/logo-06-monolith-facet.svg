@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="30%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE08A"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(200, 150)">
+    <!-- Top Face of Ingot -->
+    <polygon points="0,-60 45,-34 0,-8 -45,-34" fill="#FFF1BF"/>
+    <!-- Left Face of Ingot -->
+    <polygon points="-45,-34 0,-8 0,55 -45,29" fill="url(#gold)"/>
+    <!-- Right Face of Ingot with Diamond Cutout -->
+    <polygon points="0,-8 45,-34 45,29 0,55" fill="#996E16"/>
+    <!-- Facet Refraction Accent -->
+    <polygon points="0,-8 22,-20 0,20 -22,-20" fill="url(#gold)" opacity="0.9"/>
+  </g>
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold)" letter-spacing="4">BULLION REFINING &amp; IMPORT</text>
+</svg>

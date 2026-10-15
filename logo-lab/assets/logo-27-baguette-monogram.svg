@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold27" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="35%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+    <linearGradient id="goldDark27" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#7A560A"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: Art Deco Baguette Cut Diamonds Monogram 'R' -->
+  <g transform="translate(200, 145)">
+    <!-- Vertical Spine Baguettes (Left Pillar) -->
+    <rect x="-48" y="-70" width="14" height="66" fill="url(#gold27)" rx="1"/>
+    <rect x="-48" y="2" width="14" height="68" fill="url(#goldDark27)" rx="1"/>
+    <!-- Top Horizontal Baguette Bar -->
+    <rect x="-30" y="-70" width="56" height="14" fill="url(#gold27)" rx="1"/>
+    <!-- Right Upper Vertical Baguette -->
+    <rect x="28" y="-52" width="14" height="44" fill="url(#goldDark27)" rx="1"/>
+    <!-- Middle Horizontal Baguette Bar -->
+    <rect x="-30" y="-4" width="54" height="14" fill="url(#gold27)" rx="1"/>
+    <!-- Diagonal Leg Baguette Bar (R Kick / Ra'a Sweep) -->
+    <polygon points="6,14 22,14 48,70 30,70" fill="url(#gold27)"/>
+    <!-- Inset Negative Space Solitaire Gem -->
+    <polygon points="-8,-34 2,-24 -8,-14 -18,-24" fill="#FFFDF0"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold27)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold27)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

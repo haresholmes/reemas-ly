@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="g35Bar1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="40%" stop-color="#E5C058"/>
+      <stop offset="100%" stop-color="#A67B18"/>
+    </linearGradient>
+    <linearGradient id="g35Bar2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE08A"/>
+      <stop offset="60%" stop-color="#CA8A04"/>
+      <stop offset="100%" stop-color="#78550B"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: Interlocking Dual Gold Ingots & Diamond Aperture -->
+  <g transform="translate(200, 145)">
+    <!-- First Gold Bullion Ingot (Angled +35 deg) -->
+    <g transform="rotate(35)">
+      <rect x="-65" y="-14" width="130" height="28" rx="4" fill="url(#g35Bar1)"/>
+      <line x1="-55" y1="-8" x2="55" y2="-8" stroke="#FFFDF0" stroke-width="1.5" opacity="0.6"/>
+    </g>
+    <!-- Second Gold Bullion Ingot (Angled -35 deg) -->
+    <g transform="rotate(-35)">
+      <rect x="-65" y="-14" width="130" height="28" rx="4" fill="url(#g35Bar2)"/>
+      <line x1="-55" y1="-8" x2="55" y2="-8" stroke="#FFFDF0" stroke-width="1.5" opacity="0.6"/>
+    </g>
+    <!-- Central Overlap Diamond Aperture (Negative Space & Gem) -->
+    <polygon points="0,-18 18,0 0,18 -18,0" fill="#03070E"/>
+    <polygon points="0,-12 12,0 0,12 -12,0" fill="#FFFDF0"/>
+    <circle cx="0" cy="0" r="2.5" fill="#E5C058"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#g35Bar1)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#g35Bar1)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

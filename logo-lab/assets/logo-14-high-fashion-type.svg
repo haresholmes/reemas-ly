@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="30%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE08A"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(200, 140)">
+    <!-- Majestic Geometric Letter 'R' with built-in diamond facet -->
+    <path d="M-35,-45 L5,-45 C28,-45 42,-30 42,-10 C42,10 26,22 5,22 L-35,22 Z" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+    <line x1="-15" y1="-45" x2="-15" y2="55" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+    <!-- Elegant diagonal leg forming diamond cut -->
+    <polygon points="0,18 38,55 24,55 -10,22" fill="url(#gold)"/>
+    <!-- Floating Solitaire Dot inside Counter -->
+    <polygon points="5,-18 12,-10 5,-2 -2,-10" fill="#FFF9D6"/>
+  </g>
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold)" letter-spacing="4">PARIS · TRIPOLI</text>
+</svg>

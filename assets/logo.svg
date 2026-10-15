@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1BF"/>
+      <stop offset="25%" stop-color="#E6C15B"/>
+      <stop offset="60%" stop-color="#B58525"/>
+      <stop offset="85%" stop-color="#ECCF78"/>
+      <stop offset="100%" stop-color="#8E6215"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600;700&amp;family=Jost:wght@500;600;700&amp;display=swap');
+      .gold-txt { fill: url(#logoGold); }
+      .navy-txt { fill: #081426; }
+      .latin { font-family: 'Jost', 'Cinzel', -apple-system, sans-serif; }
+      .arabic { font-family: 'IBM Plex Sans Arabic', 'Amiri', serif; }
+    </style>
+  </defs>
+
+  <!-- Milled Coin Outer Rings -->
+  <circle cx="250" cy="250" r="238" fill="none" stroke="url(#logoGold)" stroke-width="1.8" opacity="0.5"/>
+  <circle cx="250" cy="250" r="228" fill="none" stroke="#081426" stroke-width="3.5"/>
+  <circle cx="250" cy="250" r="218" fill="none" stroke="url(#logoGold)" stroke-width="2"/>
+  <circle cx="250" cy="250" r="210" fill="none" stroke="url(#logoGold)" stroke-width="1" stroke-dasharray="2 4" opacity="0.8"/>
+  <circle cx="250" cy="250" r="198" fill="none" stroke="#081426" stroke-width="1" opacity="0.4"/>
+
+  <!-- 4 Sovereign Diamond Points -->
+  <polygon points="250,42 254,49 250,56 246,49" fill="url(#logoGold)"/>
+  <polygon points="250,444 254,451 250,458 246,451" fill="url(#logoGold)"/>
+  <polygon points="49,250 56,246 63,250 56,254" fill="url(#logoGold)"/>
+  <polygon points="437,250 444,246 451,250 444,254" fill="url(#logoGold)"/>
+
+  <!-- Center Core: 3D Diamond / Shield Royal Crest -->
+  <g transform="translate(250, 168)">
+    <circle cx="0" cy="-10" r="38" fill="none" stroke="url(#logoGold)" stroke-width="0.6" opacity="0.4" stroke-dasharray="2 4"/>
+    <g fill="none" stroke="url(#logoGold)" stroke-width="2.6" stroke-linejoin="round">
+      <polygon points="0,-58 34,-38 42,0 25,34 0,48 -25,34 -42,0 -34,-38" fill="none" stroke="url(#logoGold)" stroke-width="2.8"/>
+      <polygon points="0,-40 22,-25 0,-7 -22,-25" fill="url(#logoGold)" fill-opacity="0.2" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="0" y1="-58" x2="0" y2="-40" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="34" y1="-38" x2="22" y2="-25" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="-34" y1="-38" x2="-22" y2="-25" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="42" y1="0" x2="22" y2="-25" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="-42" y1="0" x2="-22" y2="-25" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="0" y1="-7" x2="0" y2="48" stroke="url(#logoGold)" stroke-width="2.2"/>
+      <line x1="22" y1="-25" x2="0" y2="48" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="-22" y1="-25" x2="0" y2="48" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="42" y1="0" x2="25" y2="34" stroke="url(#logoGold)" stroke-width="1.8"/>
+      <line x1="-42" y1="0" x2="-25" y2="34" stroke="url(#logoGold)" stroke-width="1.8"/>
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <text x="250" y="264" text-anchor="middle" class="arabic navy-txt" font-size="38" font-weight="700" letter-spacing="0.5">مركز الريماس</text>
+  <text x="250" y="298" text-anchor="middle" class="latin navy-txt" font-size="16" font-weight="700" letter-spacing="7">AL REEMAS CENTER</text>
+  <text x="250" y="326" text-anchor="middle" class="arabic gold-txt" font-size="14.5" font-weight="600" letter-spacing="1.5">لاستيراد الذهب والمجوهرات</text>
+
+  <!-- Divider -->
+  <line x1="185" y1="348" x2="232" y2="348" stroke="url(#logoGold)" stroke-width="1.2"/>
+  <polygon points="250,345 253,348 250,351 247,348" fill="url(#logoGold)"/>
+  <line x1="268" y1="348" x2="315" y2="348" stroke="url(#logoGold)" stroke-width="1.2"/>
+
+  <text x="250" y="376" text-anchor="middle" class="latin navy-txt" font-size="13" font-weight="600" letter-spacing="4">TRIPOLI · EST. 2013</text>
+  <text x="250" y="400" text-anchor="middle" class="arabic navy-txt" font-size="12.5" font-weight="600" opacity="0.8">السجل التجاري 45069</text>
+</svg>

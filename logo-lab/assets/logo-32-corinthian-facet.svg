@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold32" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="35%" stop-color="#E5C058"/>
+      <stop offset="70%" stop-color="#B58525"/>
+      <stop offset="100%" stop-color="#ECCF78"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: The Leptis Column & Emerald Cut Diamond Pediment -->
+  <g transform="translate(200, 145)">
+    <!-- Emerald Cut Diamond Capital Pediment at Top -->
+    <polygon points="-42,-65 42,-65 52,-45 40,-35 -40,-35 -52,-45" fill="none" stroke="url(#gold32)" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="-24,-58 24,-58 32,-45 22,-40 -22,-40 -32,-45" fill="#FFFDF0" opacity="0.85"/>
+    <!-- Capital Scrolls (Volutes) -->
+    <path d="M-42,-35 C-52,-35 -52,-20 -40,-20 C-32,-20 -28,-28 -28,-35" fill="none" stroke="url(#gold32)" stroke-width="3"/>
+    <path d="M42,-35 C52,-35 52,-20 40,-20 C32,-20 28,-28 28,-35" fill="none" stroke="url(#gold32)" stroke-width="3"/>
+    <!-- Twin Fluted Column Pillars -->
+    <line x1="-24" y1="-20" x2="-24" y2="60" stroke="url(#gold32)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-20" x2="0" y2="60" stroke="url(#gold32)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="24" y1="-20" x2="24" y2="60" stroke="url(#gold32)" stroke-width="4" stroke-linecap="round"/>
+    <!-- Plinth / Base Line -->
+    <line x1="-40" y1="65" x2="40" y2="65" stroke="url(#gold32)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#gold32)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#gold32)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

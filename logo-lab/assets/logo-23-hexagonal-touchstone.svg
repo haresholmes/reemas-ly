@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="goldTop23" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5CC"/>
+      <stop offset="100%" stop-color="#E5C058"/>
+    </linearGradient>
+    <linearGradient id="goldLeft23" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8F6510"/>
+    </linearGradient>
+    <linearGradient id="goldRight23" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C058"/>
+      <stop offset="100%" stop-color="#A67B18"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark: Isometric Hexagonal Touchstone & Negative Space Ingot Core -->
+  <g transform="translate(200, 145)">
+    <!-- Top Rhombus (Reflecting Light) -->
+    <polygon points="0,-64 54,-33 0,-2 -54,-33" fill="url(#goldTop23)"/>
+    <!-- Left Rhombus (Deep Gold Shade) -->
+    <polygon points="-54,-25 0,6 0,68 -54,37" fill="url(#goldLeft23)"/>
+    <!-- Right Rhombus (Warm Gold Medium) -->
+    <polygon points="0,6 54,-25 54,37 0,68" fill="url(#goldRight23)"/>
+    <!-- Central Negative Space Star Diamond -->
+    <polygon points="0,-16 10,0 0,16 -10,0" fill="#03070E"/>
+    <polygon points="0,-10 6,0 0,10 -6,0" fill="#FFF8DC"/>
+  </g>
+  <!-- Typography -->
+  <text x="200" y="278" text-anchor="middle" font-family="'IBM Plex Sans Arabic', sans-serif" font-size="32" font-weight="600" fill="url(#goldTop23)" letter-spacing="1.5">الـريـمـاس</text>
+  <text x="200" y="306" text-anchor="middle" font-family="'Jost', sans-serif" font-size="13" font-weight="600" fill="#CBD5E1" letter-spacing="7.5">AL REEMAS</text>
+  <text x="200" y="326" text-anchor="middle" font-family="'Jost', sans-serif" font-size="9" font-weight="500" fill="url(#goldTop23)" letter-spacing="4">GOLD &amp; JEWELRY</text>
+</svg>

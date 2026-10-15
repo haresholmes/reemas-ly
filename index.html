@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مركز الريماس | لاستيراد الذهب والمجوهرات — طرابلس، ليبيا</title>
+  <meta name="description" content="مركز الريماس لاستيراد الذهب والسبائك والمجوهرات في طرابلس - ليبيا. سبائك عيار 24، مشغولات عيار 21، ومجوهرات عيار 18 لتجار وصاغة ليبيا منذ عام 2013. سجل تجاري 45069.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon.png">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Site Header
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#hero" class="header-brand" aria-label="الرئيسية - مركز الريماس">
+        <img src="assets/logo-horizontal.svg" alt="شعار مركز الريماس" class="header-brand-logo">
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a href="#about" data-i18n="nav.about">من نحن</a>
+        <a href="#bullion" data-i18n="nav.products">السبائك والعيارات</a>
+        <a href="#calculator" data-i18n="nav.calculator">حاسبة الجملة</a>
+        <a href="#pipeline" data-i18n="nav.pipeline">مسار التوريد</a>
+        <a href="#credentials" data-i18n="nav.credentials">البيانات الرسمية</a>
+        <a href="logo-lab/" style="color:var(--gold); font-weight:700;">✨ مختبر الشعارات (36 مفهوماً)</a>
+        <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+      </nav>
+
+      <!-- Action Items, Theme & Language Switchers -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="header-control-btn" id="themeToggle" type="button" aria-label="تبديل مظهر الموقع">
+          <span>☀️</span>
+          <span class="theme-label">الوضع الفاتح</span>
+        </button>
+
+        <!-- Language Switcher -->
+        <button class="header-control-btn" id="langToggle" type="button" aria-label="تبديل اللغة">
+          <span class="lang-text">English</span>
+          <span style="font-size:0.8rem">🌐</span>
+        </button>
+
+        <a href="#contact" class="btn btn-gold" data-i18n="nav.quote" style="padding: 9px 18px; font-size: 0.88rem;">طلب تسعيرة جملة</a>
+        
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         Hero Section
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow-orb"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div>
+              <span class="badge-luxury">
+                <span class="badge-pulse"></span>
+                <span data-i18n="hero.badge">استيراد الذهب والسبائك · طرابلس - ليبيا · تأسست 2013</span>
+              </span>
+            </div>
+            
+            <h1 class="hero-title">
+              <span data-i18n="hero.title">ذهب ومجوهرات مستوردة لتجّار وصاغة ليبيا</span>
+            </h1>
+            
+            <p class="hero-lead" data-i18n="hero.lead">
+              شركة ليبية مرخّصة تربط أسواق الصاغة في ليبيا بمصادر الذهب والمصافي العالمية المعتمدة. نوفّر سبائك الذهب الخالص والمشغولات الفاخرة بعيار مفحوص، ووزن موثّق، وفاتورة تجارية رسمية.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#calculator" class="btn btn-gold" data-i18n="hero.cta_quote">حاسبة طلبيات الجملة</a>
+              <a href="#bullion" class="btn btn-glass" data-i18n="hero.cta_products">فحص سبائك 24K المستوردة</a>
+            </div>
+          </div>
+
+          <div class="hero-media-wrapper">
+            <!-- 3D Interactive Medallion Seal -->
+            <a href="#credentials" title="الختم الرسمي المعتمد لمركز الريماس">
+              <img src="assets/seal-badge-dark.svg" alt="الختم الرسمي لمركز الريماس لاستيراد الذهب" class="hero-seal-interactive">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Live Bullion Spot Price Ticker Bar (شريط أسعار الذهب الفورية)
+         ======================================================================== -->
+    <section class="gold-ticker-section" id="liveTicker" aria-label="أسعار الذهب المباشرة">
+      <div class="container">
+        <div class="ticker-header-row">
+          <div class="ticker-live-status">
+            <span class="badge-pulse"></span>
+            <span data-i18n="ticker.live">البورصة العالمية للذهب | تسعير سوق طرابلس المباشر</span>
+          </div>
+          <button class="ticker-refresh-btn" id="refreshSpotBtn" type="button">
+            <span>↻</span>
+            <span data-i18n="ticker.refresh">تحديث الأسعار</span>
+          </button>
+        </div>
+
+        <div class="gold-cards-grid">
+          <!-- 24K -->
+          <div class="gold-price-card">
+            <div class="gold-karat-title">
+              <span data-i18n="ticker.24k">عيار 24 سبائك (999.9)</span>
+              <span class="gold-change-badge">▲ +0.65%</span>
+            </div>
+            <div class="gold-price-values">
+              <span class="gold-price-lyd" id="price-lyd-24k">412.50 LYD</span>
+              <span class="gold-price-usd" id="price-usd-24k">$84.40 / g</span>
+            </div>
+          </div>
+
+          <!-- 22K -->
+          <div class="gold-price-card">
+            <div class="gold-karat-title">
+              <span data-i18n="ticker.22k">عيار 22 مشغولات (916)</span>
+              <span class="gold-change-badge">▲ +0.50%</span>
+            </div>
+            <div class="gold-price-values">
+              <span class="gold-price-lyd" id="price-lyd-22k">378.10 LYD</span>
+              <span class="gold-price-usd" id="price-usd-22k">$77.36 / g</span>
+            </div>
+          </div>
+
+          <!-- 21K -->
+          <div class="gold-price-card">
+            <div class="gold-karat-title">
+              <span data-i18n="ticker.21k">عيار 21 السوق الليبي (875)</span>
+              <span class="gold-change-badge">▲ +0.55%</span>
+            </div>
+            <div class="gold-price-values">
+              <span class="gold-price-lyd" id="price-lyd-21k">360.90 LYD</span>
+              <span class="gold-price-usd" id="price-usd-21k">$73.85 / g</span>
+            </div>
+          </div>
+
+          <!-- 18K -->
+          <div class="gold-price-card">
+            <div class="gold-karat-title">
+              <span data-i18n="ticker.18k">عيار 18 مجوهرات (750)</span>
+              <span class="gold-change-badge">▲ +0.40%</span>
+            </div>
+            <div class="gold-price-values">
+              <span class="gold-price-lyd" id="price-lyd-18k">309.40 LYD</span>
+              <span class="gold-price-usd" id="price-usd-18k">$63.30 / g</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Official Credentials Bar (السجل والتراخيص الرسمية)
+         ======================================================================== -->
+    <section class="credentials-bar" id="credentials" aria-label="البيانات القانونية">
+      <div class="container">
+        <div class="credentials-grid">
+          <div class="credential-item" data-copy="45069" title="انقر لنسخ الرقم">
+            <span class="credential-label" data-i18n="cred.cr">السجل التجاري</span>
+            <div class="credential-value">
+              <span>45069</span>
+              <span style="font-size:0.9rem; color:var(--gold);">⎘</span>
+            </div>
+            <span class="copied-toast" data-i18n="cred.copied">تم النسخ!</span>
+          </div>
+
+          <div class="credential-item" data-copy="5445069" title="انقر لنسخ الرقم">
+            <span class="credential-label" data-i18n="cred.lic">رقم ترخيص الاستيراد</span>
+            <div class="credential-value">
+              <span>5445069</span>
+              <span style="font-size:0.9rem; color:var(--gold);">⎘</span>
+            </div>
+            <span class="copied-toast" data-i18n="cred.copied">تم النسخ!</span>
+          </div>
+
+          <div class="credential-item" data-copy="21566" title="انقر لنسخ الرقم">
+            <span class="credential-label" data-i18n="cred.tax">الرقم الضريبي</span>
+            <div class="credential-value">
+              <span>21566</span>
+              <span style="font-size:0.9rem; color:var(--gold);">⎘</span>
+            </div>
+            <span class="copied-toast" data-i18n="cred.copied">تم النسخ!</span>
+          </div>
+
+          <div class="credential-item" data-copy="2013" title="سنة التأسيس">
+            <span class="credential-label" data-i18n="cred.est">سنة التأسيس</span>
+            <div class="credential-value">
+              <span>2013</span>
+              <span class="text-gold-gradient" style="font-size: 1.05rem;">طرابلس</span>
+            </div>
+            <span class="copied-toast" data-i18n="cred.copied">تم النسخ!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Interactive 3D Bullion Bar & Karats Showcase
+         ======================================================================== -->
+    <section class="section" id="bullion">
+      <div class="container">
+        <div>
+          <span class="section-label" data-i18n="showcase.label">السبائك الاستثمارية المعتمدة</span>
+          <h2 class="section-title" data-i18n="showcase.title">سبائك ذهب صافٍ معتمدة من كبرى المصافي الدولية</h2>
+          <p class="section-subtitle" data-i18n="showcase.subtitle">نقاوة 999.9 مطابقة لمعايير أسواق السبائك العالمية مع شهادة فحص ورقم تسلسلي لكل سبيكة.</p>
+        </div>
+
+        <div class="bullion-showcase-grid">
+          <!-- 3D Gold Bar Stage -->
+          <div class="bullion-3d-stage">
+            <div class="bullion-bar-card" id="goldBarCard" title="سبيكة مركز الريماس - ذهب خالص">
+              <div class="bullion-bar-stamp">AL REEMAS · TRIPOLI</div>
+              <div>
+                <div class="bullion-purity-large">999.9</div>
+                <div class="bullion-purity-label">FINE GOLD</div>
+              </div>
+              <div class="bullion-hallmark-seal">
+                <img src="assets/favicon.svg" alt="ختم الجودة">
+              </div>
+              <div style="font-family:var(--font-en); font-size:1.8rem; font-weight:800;" id="barWeightDisplay">1000g</div>
+              <div class="bullion-serial-row">
+                <span>MELTER ASSAYER</span>
+                <span id="barSerialDisplay">AR-2013-45069</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Karats & Bullion Selector List -->
+          <div class="karats-interactive-list">
+            <!-- Karat 24K Box -->
+            <div class="karat-detail-box">
+              <div class="karat-box-header">
+                <span class="karat-box-tag">24 KARAT</span>
+                <span class="karat-fineness-pill">999.9 PURE GOLD</span>
+              </div>
+              <h3 style="font-size: 1.25rem;">سبائك الذهب الخالص الاستثماري</h3>
+              <p style="color:var(--ink-soft); font-size:0.95rem;">
+                سبائك مصبوبة ومختومة بنقاوة 999.9 مستوردة مباشرة من مصافي سويسرا والإمارات مع بطاقة الفحص ورقم السجل التجاري 45069.
+              </p>
+              <div style="display:flex; gap:10px; margin-top:8px;">
+                <button class="btn btn-glass bar-weight-pill active" style="padding:5px 14px; font-size:0.8rem;" data-weight="1000g" data-i18n="bar.weight_1000">1000 جم (كيلو)</button>
+                <button class="btn btn-glass bar-weight-pill" style="padding:5px 14px; font-size:0.8rem;" data-weight="100g" data-i18n="bar.weight_100">100 جم</button>
+                <button class="btn btn-glass bar-weight-pill" style="padding:5px 14px; font-size:0.8rem;" data-weight="1 OUNCE (31.1g)" data-i18n="bar.weight_oz">أونصة (31.1 جم)</button>
+              </div>
+            </div>
+
+            <!-- Karat 21K Box -->
+            <div class="karat-detail-box">
+              <div class="karat-box-header">
+                <span class="karat-box-tag">21 KARAT</span>
+                <span class="karat-fineness-pill">875 FINENESS</span>
+              </div>
+              <h3 style="font-size: 1.25rem;">المشغولات الذهبية الأكثر طلباً في ليبيا</h3>
+              <p style="color:var(--ink-soft); font-size:0.95rem;">
+                أطقم كاملة، غوايش، أساور، وسلاسل عيار 21 بدمغة 875 معتمدة، مختارة بعناية لتناسب أذواق الزبائن في محلات الصاغة الليبية.
+              </p>
+            </div>
+
+            <!-- Karat 18K Box -->
+            <div class="karat-detail-box">
+              <div class="karat-box-header">
+                <span class="karat-box-tag">18 KARAT</span>
+                <span class="karat-fineness-pill">750 FINENESS</span>
+              </div>
+              <h3 style="font-size: 1.25rem;">المجوهرات الراقية والتصاميم الإيطالية</h3>
+              <p style="color:var(--ink-soft); font-size:0.95rem;">
+                قطع مجوهرات عصرية فاخرة بدمغة 750، تشمل المشغولات خفيفة الوزن والمرصعة بأحجار الزركون الفاخرة لواجهات المحلات المميزة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Wholesale Order Volume & Price Calculator (حاسبة طلبيات الجملة للتجار)
+         ======================================================================== -->
+    <section class="section section-alt" id="calculator">
+      <div class="container">
+        <div>
+          <span class="section-label" data-i18n="calc.label">حاسبة طلبيات الجملة</span>
+          <h2 class="section-title" data-i18n="calc.title">احسب قيمة شحنتك وحجم الذهب الصافي</h2>
+          <p class="section-subtitle" data-i18n="calc.subtitle">أداة تسعير فورية مخصصة لأصحاب محلات الصاغة وتجار الذهب لتقدير حجم الشحنات وتنسيق الطلب المباشر.</p>
+        </div>
+
+        <div class="calc-wrapper">
+          <!-- Inputs Column -->
+          <div class="calc-inputs">
+            <div class="calc-field">
+              <label data-i18n="calc.select_karat">اختر عيار الذهب</label>
+              <div class="calc-radio-group">
+                <div class="calc-radio-btn active" data-karat="24k">
+                  <strong>24K</strong>
+                  <small>سبائك 999.9</small>
+                </div>
+                <div class="calc-radio-btn" data-karat="21k">
+                  <strong>21K</strong>
+                  <small>مشغولات 875</small>
+                </div>
+                <div class="calc-radio-btn" data-karat="18k">
+                  <strong>18K</strong>
+                  <small>مجوهرات 750</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-field">
+              <div style="display:flex; justify-content:space-between; align-items:baseline;">
+                <label data-i18n="calc.select_weight">وزن الشحنة المطلوب (بالجرام)</label>
+                <span style="font-family:var(--font-en); font-weight:700; color:var(--gold);" id="calcWeightLabel">100g – 5000g</span>
+              </div>
+              <input type="number" id="calcWeight" class="form-field" value="500" min="10" max="10000" step="10" style="padding:12px; font-size:1.1rem; font-weight:700;">
+              <input type="range" id="calcWeightSlider" class="calc-slider-input" min="50" max="3000" value="500" step="50">
+            </div>
+          </div>
+
+          <!-- Real-Time Calculation Results -->
+          <div class="calc-results-card">
+            <div>
+              <div class="calc-result-row">
+                <span class="calc-result-label" data-i18n="calc.pure_content">الذهب الصافي الفعلي</span>
+                <span class="calc-result-val" id="calcPureContent">499.9 g</span>
+              </div>
+              <div class="calc-result-row">
+                <span class="calc-result-label" data-i18n="calc.fineness">درجة النقاوة والدمغة</span>
+                <span class="calc-result-val" id="calcFineness">999.9 (99.9%)</span>
+              </div>
+              <div class="calc-result-row">
+                <span class="calc-result-label" data-i18n="calc.est_lyd">القيمة التقديرية (دينار ليبي)</span>
+                <span class="calc-result-val text-gold-gradient" id="calcEstLyd">206,250 LYD</span>
+              </div>
+              <div class="calc-result-row">
+                <span class="calc-result-label" data-i18n="calc.est_usd">القيمة المقابلة بالدولار</span>
+                <span class="calc-result-val" id="calcEstUsd">$42,200</span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/218910000000" id="calcWhatsappBtn" target="_blank" class="btn btn-gold" style="width:100%;" data-i18n="calc.order_btn">
+              <span>طلب هذه الشحنة عبر واتساب مباشرة</span>
+              <span>💬</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Supply Chain Pipeline (مسار التوريد المعتمد)
+         ======================================================================== -->
+    <section class="section" id="pipeline">
+      <div class="container">
+        <div>
+          <span class="section-label" data-i18n="pipe.label">سلسلة التوريد الآمنة</span>
+          <h2 class="section-title" data-i18n="pipe.title">من مصافي الذهب المعتمدة إلى خزانة محلك</h2>
+          <p class="section-subtitle" data-i18n="pipe.subtitle">مسار توريد وشحن مؤمّن وموثّق قانونياً بإشراف كامل من إدارة مركز الريماس في طرابلس.</p>
+        </div>
+
+        <div class="pipeline-grid">
+          <div class="pipeline-step-card">
+            <span class="pipeline-step-number">01</span>
+            <h3 data-i18n="pipe.s1_t">التعاقد مع المصافي المعتمدة</h3>
+            <p data-i18n="pipe.s1_d">شراء مباشر من مصافي الذهب المعتمدة دولياً في سويسرا والإمارات بأسعار البورصة الحية مع فحص المصنع.</p>
+          </div>
+
+          <div class="pipeline-step-card">
+            <span class="pipeline-step-number">02</span>
+            <h3 data-i18n="pipe.s2_t">الشحن المصفح والمؤمّن</h3>
+            <p data-i18n="pipe.s2_d">شحن جوي مصفح ومؤمّن بنسبة 100% عبر كبرى شركات حراسة ونقل المعادن الثمينة حتى مطار طرابلس.</p>
+          </div>
+
+          <div class="pipeline-step-card">
+            <span class="pipeline-step-number">03</span>
+            <h3 data-i18n="pipe.s3_t">التخليص الجمركي والفواتير</h3>
+            <p data-i18n="pipe.s3_d">إتمام التخليص الجمركي القانوني، وسداد الرسوم، وإصدار الفاتورة الضريبية الرسمية بالسجل التجاري 45069.</p>
+          </div>
+
+          <div class="pipeline-step-card">
+            <span class="pipeline-step-number">04</span>
+            <h3 data-i18n="pipe.s4_t">فحص العيار والتسليم الفوري</h3>
+            <p data-i18n="pipe.s4_d">فحص مخبري نهائي لعيار ووزن الشحنة، وتسليمها للتاجر جاهزة للتداول مع شهادة الضمان والدمغة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         About Section (عن مركز الريماس والختم المعتمد)
+         ======================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div style="display:grid; grid-template-columns:1.2fr 0.8fr; gap:60px; align-items:center;">
+          <div>
+            <span class="section-label" data-i18n="about.label">عن الشركة</span>
+            <h2 class="section-title" data-i18n="about.title">شركة ليبية مرخّصة تربط مصافي الذهب العالمية بالأسواق المحلية</h2>
+            
+            <p style="color:var(--ink-soft); font-size:1.15rem; line-height:1.9; margin-bottom:18px;" data-i18n="about.p1">
+              تأسّس مركز الريماس في العاصمة طرابلس عام 2013 ليكون شريك التوريد الموثوق لمحلات الصاغة وتجار الذهب في مختلف المدن الليبية.
+            </p>
+            
+            <p style="color:var(--ink-soft); font-size:1.05rem; line-height:1.85;" data-i18n="about.p2">
+              نتولّى سلسلة الاستيراد بأكملها: التعاقد المباشر مع المصافي المعتمدة دولياً، الشحن الجوي المؤمّن بالكامل، التخليص الجمركي القانوني، وفحص العيارات والدمغات في طرابلس. يستلم التاجر بضاعته جاهزة للبيع ومرفقة بكافة الشهادات والفواتير الرسمية.
+            </p>
+          </div>
+
+          <div style="display:flex; justify-content:center;">
+            <div style="background:var(--bg-card); border:1px solid var(--line-gold); padding:34px; border-radius:var(--radius-lg); text-align:center; box-shadow:var(--shadow-gold);">
+              <img src="assets/seal-badge-dark.svg" alt="الختم الرسمي لمركز الريماس" style="width:240px; height:auto; margin-inline:auto;">
+              <div style="margin-top:16px;">
+                <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:4px;">الختم الرسمي لمركز الريماس</h4>
+                <p style="font-size:0.88rem; color:var(--ink-muted);">معتمد بالسجل التجاري 45069 والترخيص 5445069 والرقم الضريبي 21566</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Contact & Wholesale Inquiry Form
+         ======================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div>
+          <span class="section-label" data-i18n="contact.label">التواصل والطلبات</span>
+          <h2 class="section-title" data-i18n="contact.title">اطلب أسعار اليوم أو نسّق موعداً لزيارة المركز</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-card">
+            <div>
+              <h3 data-i18n="contact.info_title">مكتب الجملة والتوريد</h3>
+              <p style="margin-top: 8px; color:var(--ink-soft);" data-i18n="contact.info_desc">نرحب باستفسارات تجار الذهب ومحلات الصاغة وطلبات التوريد طيلة أيام الأسبوع.</p>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div class="contact-detail-row">
+                <span class="contact-detail-label" data-i18n="contact.addr_label">المقر الرئيسي</span>
+                <span class="contact-detail-val" data-i18n="contact.addr_val">طرابلس، ليبيا</span>
+              </div>
+
+              <div class="contact-detail-row">
+                <span class="contact-detail-label" data-i18n="contact.hours_label">أوقات العمل والتداول</span>
+                <span class="contact-detail-val" data-i18n="contact.hours_val">السبت – الخميس: 9:00 صباحاً – 6:00 مساءً</span>
+              </div>
+
+              <div class="contact-detail-row">
+                <span class="contact-detail-label" data-i18n="contact.phone_label">الهاتف والواتساب المباشر</span>
+                <span class="contact-detail-val" dir="ltr" data-i18n="contact.phone_val">+218 (0) 91 000 0000</span>
+              </div>
+
+              <div class="contact-detail-row">
+                <span class="contact-detail-label" data-i18n="contact.email_label">البريد الإلكتروني للطلبات</span>
+                <span class="contact-detail-val" dir="ltr" data-i18n="contact.email_val">orders@alreemas-center.ly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Request Form -->
+          <form class="contact-form" id="quoteForm">
+            <div id="formFeedback" class="form-feedback" hidden data-i18n="form.success_msg">
+              شكراً لتواصلك! تم استلام طلب عرض الأسعار بنجاح، وسيتواصل معك مندوب مبيعات الجملة خلال وقت قصير.
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-field">
+                <label for="formName" data-i18n="form.name_label">اسم التاجر أو محل الصاغة</label>
+                <input id="formName" type="text" required placeholder="مثال: مجوهرات البركة" data-i18n-placeholder="form.name_placeholder">
+              </div>
+
+              <div class="form-field">
+                <label for="formCity" data-i18n="form.city_label">المدينة</label>
+                <input id="formCity" type="text" required placeholder="طرابلس، بنغازي، مصراتة..." data-i18n-placeholder="form.city_placeholder">
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-field">
+                <label for="formPhone" data-i18n="form.phone_label">رقم الهاتف / واتساب</label>
+                <input id="formPhone" type="tel" dir="ltr" required placeholder="+218 9X XXXXXXX" data-i18n-placeholder="form.phone_placeholder">
+              </div>
+
+              <div class="form-field">
+                <label for="formType" data-i18n="form.type_label">نوع الشحنة المطلوبة</label>
+                <select id="formType">
+                  <option value="24k" data-i18n="form.type_opt1">سبائك ذهب عيار 24 (999.9)</option>
+                  <option value="21k" data-i18n="form.type_opt2">مشغولات ذهبية عيار 21 (875)</option>
+                  <option value="18k" data-i18n="form.type_opt3">مجوهرات راقية عيار 18 (750)</option>
+                  <option value="custom" data-i18n="form.type_opt4">طلب استيراد خاص</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="formWeight" data-i18n="form.weight_label">الكمية أو الوزن التقديري (بالجرام)</label>
+              <input id="formWeight" type="text" placeholder="مثال: 500 جرام، 1 كجم، 50 طقم" data-i18n-placeholder="form.weight_placeholder">
+            </div>
+
+            <div class="form-field">
+              <label for="formMsg" data-i18n="form.msg_label">ملاحظات أو مواصفات إضافية</label>
+              <textarea id="formMsg" rows="3" placeholder="أدخل أي متطلبات أو استفسارات إضافية..." data-i18n-placeholder="form.msg_placeholder"></textarea>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px;">
+              <button class="btn btn-gold" type="submit" data-i18n="form.submit">إرسال طلب التسعيرة الرسمي</button>
+              <span style="font-size:0.85rem; color:var(--ink-muted);">معاملات جملة معتمدة</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Official Brand Assets Download Bar
+         ======================================================================== -->
+    <section class="assets-download-bar" id="assetsCenter">
+      <div class="container">
+        <div>
+          <span class="section-label" data-i18n="assets.label">الملفات الرسمية</span>
+          <h3 style="font-size: 1.5rem;" data-i18n="assets.title">حزمة الهوية الرسمية والختم المعتمد</h3>
+          <p style="font-size: 0.95rem; color: var(--ink-muted);" data-i18n="assets.subtitle">تحميل ملفات المتجهات (SVG) والصور عالية الدقة الشفافة (2048×2048 PNG) للفواتير والمطبوعات والأختام.</p>
+        </div>
+
+        <div class="assets-download-grid">
+          <!-- Asset 1: Dark Medallion -->
+          <div class="asset-download-card">
+            <div class="asset-download-preview">
+              <img src="assets/seal-badge-dark.svg" alt="ختم مركز الريماس الملكي الداكن">
+            </div>
+            <div class="asset-download-name" data-i18n="asset.seal_badge">ميدالية الختم الملكي الداكن</div>
+            <div class="asset-download-meta">SVG / 2048×2048 PNG</div>
+            <div class="asset-download-actions">
+              <a href="assets/seal-badge-dark.svg" download class="asset-btn-pill" data-i18n="asset.download_svg">SVG</a>
+              <a href="assets/seal-badge-dark.png" download class="asset-btn-pill" data-i18n="asset.download_png">PNG 2K</a>
+            </div>
+          </div>
+
+          <!-- Asset 2: Duo-tone Seal -->
+          <div class="asset-download-card">
+            <div class="asset-download-preview">
+              <img src="assets/seal.svg" alt="ختم مركز الريماس كحلي وذهبي">
+            </div>
+            <div class="asset-download-name" data-i18n="asset.seal_duo">الختم الرسمي (كحلي وذهبي)</div>
+            <div class="asset-download-meta">SVG / 2048×2048 PNG</div>
+            <div class="asset-download-actions">
+              <a href="assets/seal.svg" download class="asset-btn-pill" data-i18n="asset.download_svg">SVG</a>
+              <a href="assets/seal.png" download class="asset-btn-pill" data-i18n="asset.download_png">PNG 2K</a>
+            </div>
+          </div>
+
+          <!-- Asset 3: Royal Gold Seal -->
+          <div class="asset-download-card">
+            <div class="asset-download-preview">
+              <img src="assets/seal-gold.svg" alt="ختم مركز الريماس ذهبي">
+            </div>
+            <div class="asset-download-name" data-i18n="asset.seal_gold">الختم الرسمي (ذهبي ملكي)</div>
+            <div class="asset-download-meta">SVG / 2048×2048 PNG</div>
+            <div class="asset-download-actions">
+              <a href="assets/seal-gold.svg" download class="asset-btn-pill" data-i18n="asset.download_svg">SVG</a>
+              <a href="assets/seal-gold.png" download class="asset-btn-pill" data-i18n="asset.download_png">PNG 2K</a>
+            </div>
+          </div>
+
+          <!-- Asset 4: Primary Logo -->
+          <div class="asset-download-card">
+            <div class="asset-download-preview">
+              <img src="assets/logo.svg" alt="شعار مركز الريماس الدائري">
+            </div>
+            <div class="asset-download-name" data-i18n="asset.logo_prim">شعار الدرع الملكي الرئيسي</div>
+            <div class="asset-download-meta">SVG / 2048×2048 PNG</div>
+            <div class="asset-download-actions">
+              <a href="assets/logo.svg" download class="asset-btn-pill" data-i18n="asset.download_svg">SVG</a>
+              <a href="assets/logo.png" download class="asset-btn-pill" data-i18n="asset.download_png">PNG 2K</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Site Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo-horizontal.svg" alt="مركز الريماس" style="filter: brightness(0) invert(1);">
+          <p data-i18n="foot.desc">
+            مركز الريماس لاستيراد الذهب والمجوهرات، شركة ليبية رائدة في تجارة واستيراد المعادن الثمينة والسبائك والمشغولات الفاخرة لتجار الجملة والصاغة منذ عام 2013.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="foot.quick_links">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+            <li><a href="#bullion" data-i18n="nav.products">السبائك والعيارات</a></li>
+            <li><a href="#calculator" data-i18n="nav.calculator">حاسبة الجملة</a></li>
+            <li><a href="#pipeline" data-i18n="nav.pipeline">مسار التوريد</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">طلب تسعيرة</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="foot.legal">البيانات الرسمية</h4>
+          <ul class="footer-links" style="font-family: var(--font-en);">
+            <li>السجل التجاري: <strong style="color:var(--gold);">45069</strong></li>
+            <li>ترخيص الاستيراد: <strong style="color:var(--gold);">5445069</strong></li>
+            <li>الرقم الضريبي: <strong style="color:var(--gold);">21566</strong></li>
+            <li>تاريخ التأسيس: <strong style="color:var(--gold);">2013</strong></li>
+            <li>المقر: <strong style="color:var(--gold);">طرابلس - ليبيا</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-credentials">
+          <span>سجل: 45069</span>
+          <span>•</span>
+          <span>ترخيص: 5445069</span>
+          <span>•</span>
+          <span>ضريبة: 21566</span>
+          <span>•</span>
+          <span>طرابلس، ليبيا</span>
+        </div>
+
+        <p data-i18n="foot.copy">© 2013–2026 مركز الريماس لاستيراد الذهب والمجوهرات. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

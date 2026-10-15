@@ -1,0 +1,25 @@
+{
+  "name": "al-reemas-center",
+  "version": "1.0.0",
+  "description": "Visual Identity and Minimalist Corporate Website for Al Reemas Center for Gold & Jewelry Import (Tripoli, Libya)",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 server.py --open",
+    "dev": "python3 server.py",
+    "serve": "python3 -m http.server 3000",
+    "build:assets": "python3 generate_assets.py"
+  },
+  "keywords": [
+    "gold",
+    "jewelry",
+    "import",
+    "libya",
+    "tripoli",
+    "reemas",
+    "minimalist",
+    "brand-identity"
+  ],
+  "author": "Al Reemas Center",
+  "license": "UNLICENSED",
+  "private": true
+}
